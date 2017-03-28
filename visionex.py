@@ -13,3 +13,5 @@ labels = image.detect_labels()
 
 for label in labels:
     print(label.description)
+
+# Some code here later
