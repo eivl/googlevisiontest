@@ -12,19 +12,19 @@ def language_analysis(text):
     entities = ent_analysis.entities
     return sentiment, entities
 
-example_text = '''Islamsk Råd Norges ansettelse av nikab-kledde Leyla Hasic som kommunikasjonsarbeider kan skape avstand mellom muslimer og ikke-muslimer, mener flere.
-«Islamsk Råd gjør det virkelig ikke lett for norske muslimer», skrev redaktør Didrik Søderlind i Humanist, Human-Etisk Forbunds tidsskrift, på Twitter tirsdag morgen.
+example_text = '''Islamic Council Norway employing nikab clad Leyla Hasic that communication work can create distance between Muslims and non-Muslims mean more.
+"Islamic Council makes it really easy for Norwegian Muslims," ​​wrote editor Didrik Søderlind in Humanist, Humanist Society journal, Twitter Tuesday morning.
 
-Han reagerer på Klassekampens nyhet om at Islamsk Råd Norge (IRN) har ansatt nikab-kledde Leyla Hasic (32) til å drive kommunikasjonsarbeid. Hun har markert seg som forsvarer av det ansiktsdekkende sløret.
-Ifølge Klassekampen er Hasic ansatt som administrasjonskonsulent. Etter stillingsbeskrivelsen er oppgavene hennes kommunikasjonsarbeid, søknadsskriving og IT-drift. Etter det avisen får opplyst, har 32-åringen fungert i stillingen siden februar.
+He responds to the class struggle news that the Islamic Council of Norway (IRN) has appointed nikab-clad Leyla Hasic (32) to engage in communications work. She has distinguished himself as defender of the face covering veil.
+According to the class struggle is Hasic employed as a management consultant. After the job description, the tasks her communications work, writing applications and IT operations. After the newspaper gets lit, the 32-year-old acted in the position since February.
 
-– Én ting er at det å kommunisere med nikab er vanskelig. Men en annen ting er at den representerer en islamsk praksis som er veldig fremmed for mange norske muslimer, sier Søderlind til VG.
+- One thing is that it communicate with nikab is difficult. But another thing is that it represents an Islamic practice which is very foreign to many Norwegian Muslims, says Søderlind VG.
 
-– Mitt inntrykk er at toneangivende muslimske krefter har advart mot nikab-bruk, fordi det fremstår som fremmedartet og er egnet til å skape større avstand. Jeg tror at dette er uheldig for norske muslimer, sier han.
+- My impression was that the leading Muslim forces have warned nikab-user, because it appears alien and is apt to widen. I think that this is unfortunate for Norwegian Muslims, he said.
 
-Stortingsrepresentant for Venstre Abid Raja, som selv er muslim, sier han er dypt skuffet over IRN, som han mener mener gjør norske muslimer til latter.
+Member of Parliament for the Liberal Party Abid Raja, himself a Muslim, said he was deeply disappointed by IRN, which he believes thinks makes Norwegian Muslims to laugh.
 
-– Jeg har forståelse for om nordmenn blir støtt og provosert over dette. Jeg som muslim blir selv støtt og provosert, sier han til VG.
+- I understand about Norwegians are offended and angered by this. I as a Muslim becomes even offended and angered, he says to VG.
 
 '''
 sentiment, entities = language_analysis(example_text)
