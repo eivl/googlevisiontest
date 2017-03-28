@@ -11,11 +11,21 @@ def language_analysis(text):
     entities = ent_analysis.entities
     return sentiment, entities
 
-example_text = '''Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy which emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly braces or keywords), and a syntax which allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java.[22][23] The language provides constructs intended to enable writing clear programs on both a small and large scale.[24]
+example_text = '''Islamsk Råd Norges ansettelse av nikab-kledde Leyla Hasic som kommunikasjonsarbeider kan skape avstand mellom muslimer og ikke-muslimer, mener flere.
+«Islamsk Råd gjør det virkelig ikke lett for norske muslimer», skrev redaktør Didrik Søderlind i Humanist, Human-Etisk Forbunds tidsskrift, på Twitter tirsdag morgen.
 
-Python features a dynamic type system and automatic memory management and supports multiple programming paradigms, including object-oriented, imperative, functional programming, and procedural styles. It has a large and comprehensive standard library.[25]
+Han reagerer på Klassekampens nyhet om at Islamsk Råd Norge (IRN) har ansatt nikab-kledde Leyla Hasic (32) til å drive kommunikasjonsarbeid. Hun har markert seg som forsvarer av det ansiktsdekkende sløret.
+Ifølge Klassekampen er Hasic ansatt som administrasjonskonsulent. Etter stillingsbeskrivelsen er oppgavene hennes kommunikasjonsarbeid, søknadsskriving og IT-drift. Etter det avisen får opplyst, har 32-åringen fungert i stillingen siden februar.
 
-Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems. CPython, the reference implementation of Python, is open source software[26] and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.'''
+– Én ting er at det å kommunisere med nikab er vanskelig. Men en annen ting er at den representerer en islamsk praksis som er veldig fremmed for mange norske muslimer, sier Søderlind til VG.
+
+– Mitt inntrykk er at toneangivende muslimske krefter har advart mot nikab-bruk, fordi det fremstår som fremmedartet og er egnet til å skape større avstand. Jeg tror at dette er uheldig for norske muslimer, sier han.
+
+Stortingsrepresentant for Venstre Abid Raja, som selv er muslim, sier han er dypt skuffet over IRN, som han mener mener gjør norske muslimer til latter.
+
+– Jeg har forståelse for om nordmenn blir støtt og provosert over dette. Jeg som muslim blir selv støtt og provosert, sier han til VG.
+
+'''
 sentiment, entities = language_analysis(example_text)
 print(sentiment.score, sentiment.magnitude)
 
