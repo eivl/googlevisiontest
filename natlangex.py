@@ -10,3 +10,10 @@ def language_analysis(text):
     ent_analysis = document.analyze_entities()
     entities = ent_analysis.entities
     return sentiment, entities
+
+example_text = 'Is it not obvious that Python is the best programming language of them all?'
+sentiment, entities = language_analysis(example_text)
+print(sentiment.score, sentiment.magnitude)
+
+for e in entities:
+    print(e.name, e.entity_type, e.metadata, e.salience)
