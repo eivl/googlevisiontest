@@ -3,7 +3,7 @@ import io
 from google.cloud import vision
 
 vision_client = vision.Client()
-file_name = 'orthopedic-shoes.jpg'
+file_name = 'sith.jpg'
 
 with io.open(file_name, 'rb') as image_file:
     content = image_file.read()
