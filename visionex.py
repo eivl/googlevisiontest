@@ -12,6 +12,6 @@ with io.open(file_name, 'rb') as image_file:
 labels = image.detect_labels()
 
 for label in labels:
-    print(label.description)
+    print(label.description, label.score)
 
 # Some code here later
