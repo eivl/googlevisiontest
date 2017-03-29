@@ -17,5 +17,5 @@ def translate_text(text, target='en'):
     print(u'Detected source language: {}'.format(
         result['detectedSourceLanguage']))
 
-example_text = '''Hola saludos desde Colombia excelentes tutoriales me gustaría poder por lo menos tener los subtitulos ene español ...excelente gracias por compartir tus conocimientos'''
-translate_text(example_text.encode('utf-8'), target='en')
+example_text = '''Hola saludos desde Colombia excelentes tutoriales me gustaría poder por lo menos tener los subtitulos ene español ...excelente gracias por compartir tus conocimientos'''.encode('utf-8')
+translate_text(example_text.decode('utf-8'), target='en')
